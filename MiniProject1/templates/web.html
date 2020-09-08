@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+        input[type=submit] {
+          background-color: teal;
+          border: none;
+          color: white;
+          padding: 10px 50px;
+          text-decoration: none;
+          margin: 6px 14px;
+          cursor: pointer;
+          position: relative;
+        }
+        </style>
+        </head>
+<title>Rushikesh Konapure</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body >
+
+        <div class="w3-card-4">
+            <div class="w3-container w3-teal">
+             
+              <h1 class="w3-center"> PARKINSONS DISEASE PREDICTION </h1>
+            </div>
+
+        
+        
+        <form class="w3-container  w3-margin " method="POST", action="{{url_for('home')}}">
+
+            
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                <label class="w3-text-teal "><b>MDVP:Shimmer :</b></label>
+                <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='MDVP:Shimmer'>
+                </div>
+                
+                    <div class="w3-third">
+                    <label class="w3-text-teal "><b>PPE :</b></label>
+                    <input class="w3-input w3-border w3-light-grey "   type="text" ,  name='PPE'>
+                    </div>
+                    
+                        <div class="w3-third">
+                        <label class="w3-text-teal "><b>MDVP:APQ :</b></label>
+                        <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='MDVP:APQ'>
+                        </div>
+
+                            
+            </div>
+            <div class="w3-row-padding">
+                
+                <div class="w3-third">
+                <label class="w3-text-teal "><b>spread1 :</b></label>
+                <input class="w3-input w3-border w3-light-grey "  type="text" ,  name='spread1'>
+                </div>
+                    <div class="w3-third">
+                    <label class="w3-text-teal "><b>MDVP:Shimmer(dB) :</b></label>
+                    <input class="w3-input w3-border w3-light-grey "   type="text" ,  name='MDVP:Shimmer(dB)'>
+                    </div>
+                               
+            </div>
+            <input type="submit" , value='Predict!' >
+            
+            
+        </form>
+    </div>
+
+        
+   
+
+    </body>
+</html>
